@@ -24,3 +24,36 @@ body {
 .dnone {
     display: none;
 }
+
+.content {
+    background-color: $color-grey-dark;
+    width: 50rem;
+    height: auto;
+    border-radius: 1.5rem;
+
+    .content-timer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+
+        .content-h,
+        .content-m,
+        .content-s {
+           width: 16rem;
+           height: 10rem; 
+
+           .time {
+                font-size: 130px;
+                color: $color-white;
+                font-weight: 300;
+                text-align: center;
+
+                span {
+                    font-size: 3.5rem;
+                    font-weight: 500;
+                    color: $color-purple
+                }
+           }
+        }
+    }
+}
