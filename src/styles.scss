@@ -55,5 +55,27 @@ body {
                 }
            }
         }
+
+        .content-btn {
+            text-align: center;
+
+            button {
+                font-size: 2.8rem;
+                width: 3rem;
+                margin: 0 10px;
+                border-radius: 10px;
+                border: none;
+                outline: inherit;
+                color: $color-purple;
+                background-color: $color-grey-dark;
+            }
+
+            :hover {
+                background: $color-blue;
+                transition: 0.5s;
+                transform: scale(0.8);
+                cursor: pointer;  
+            }
+        }
     }
 }
