@@ -13,6 +13,7 @@ export class TimerComponent implements OnInit {
   public minutes: number = 0;
   public seconds: number = 0;
   private timer: any;
+  private date = new Date();
 
   public show: boolean = true;
   public disabled: boolean = false;
@@ -49,4 +50,35 @@ export class TimerComponent implements OnInit {
       this.seconds -= 1;
     }
   }
+
+  updateTimer() {
+    this.date.setHours(this.hours);
+    this.date.setMinutes(this.minutes);
+    this.date.setSeconds(this.seconds);
+    this.date.setMilliseconds(0);
+    const time = this.date.getTime();
+    this.date.setTime(time - 1000);
+
+    this.hours = this.date.getHours();
+    this.minutes = this.date.getMinutes();
+    this.seconds = this.date.getSeconds();
+
+    if (this.date.getHours() === 0 &&
+      this.date.getMinutes() === 0 &&
+      this.date.getSeconds() === 0) {
+      clearInterval(this.timer);
+      this.idAudio.nativeElement.play();
+      this.animate = true;
+      setTimeout(() => {
+        this.stop();
+        this.idAudio.nativeElement.load();
+      }, 5000);
+    }
+  }
+
+  stop(){}
+
+  reset(){}
+
+  start(){}
 }
