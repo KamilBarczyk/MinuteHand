@@ -1,31 +1,31 @@
-<div class="content">
+<div class="content" [class.move]="animate">
     <div class="content-timer">
         <div class="content-h">
-            <div class="time">00 <span>h</span> </div>
-            <div class="content-btn">
-                <button type="button" aria-label="Increase minutes"> + </button>
-                <button type="button" aria-label="Decrease minutes"> - </button>
+            <div class="time"> {{ hours | number:'2.0'}} <span>h</span> </div>
+            <div class="content-btn" *ngIf="show">
+                <button type="button" aria-label="Increase minutes" (click)="increment('H')"> + </button>
+                <button type="button" aria-label="Decrease minutes" (click)="decrement('H')"> - </button>
             </div>
         </div>
         <div class="content-m">
-            <div class="time">00 <span>m</span> </div>
-            <div class="content-btn">
-                <button type="button" aria-label="Increase minutes"> + </button>
-                <button type="button" aria-label="Decrease minutes"> - </button>
+            <div class="time"> {{ minutes | number:'2.0'}} <span>m</span> </div>
+            <div class="content-btn" *ngIf="show">
+                <button type="button" aria-label="Increase minutes" (click)="increment('M')"> + </button>
+                <button type="button" aria-label="Decrease minutes" (click)="decrement('M')"> - </button>
             </div>
         </div>
         <div class="content-s">
-            <div class="time">00 <span>s</span> </div>
-            <div class="content-btn">
-                <button type="button" aria-label="Increase minutes"> + </button>
-                <button type="button" aria-label="Decrease minutes"> - </button>
+            <div class="time"> {{ seconds | number:'2.0'}} <span>s</span> </div>
+            <div class="content-btn" *ngIf="show">
+                <button type="button" aria-label="Increase minutes" (click)="increment('S')"> + </button>
+                <button type="button" aria-label="Decrease minutes" (click)="decrement('S')"> - </button>
             </div>
         </div>
     </div>
     <div class="content-btn-action">
-        <button type="button" aria-label="Start timer">&#9658;</button>
-        <button type="button" aria-label="Stop timer">&#9724;</button>
-        <button type="button" aria-label="Reset timer">&#8635;</button>
+        <button type="button" aria-label="Start timer" (click)="start()" [disabled]="disabled">&#9658;</button>
+        <button type="button" aria-label="Stop timer" (click)="stop()">&#9724;</button>
+        <button type="button" aria-label="Reset timer" (click)="reset()">&#8635;</button>
     </div>
 </div>
 
