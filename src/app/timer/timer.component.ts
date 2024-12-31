@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-timer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './timer.component.html',
   styleUrl: './timer.component.scss'
 })
