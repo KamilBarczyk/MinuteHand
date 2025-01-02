@@ -6,7 +6,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './timer.component.html',
-  styleUrl: './timer.component.scss'
+  styleUrls: ['./timer.component.scss']
 })
 export class TimerComponent implements OnInit {
 
