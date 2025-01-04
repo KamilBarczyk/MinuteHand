@@ -1,27 +1,72 @@
 # MinuteHand
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+**MinuteHand** is a sleek and interactive timer application built with **Angular**. It allows users to set a timer for hours, minutes, and seconds, with intuitive controls for starting, stopping, resetting, and triggering an alarm when the timer ends.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Customizable Timer**:  
+  Set precise durations with separate controls for hours, minutes, and seconds.
+- **Interactive Controls**:  
+  Start, stop, or reset the timer with responsive buttons.
+- **Alarm Notification**:  
+  Triggers an alarm sound when the timer reaches zero.
+- **Error Handling**:  
+  Prevents setting invalid values or running timers with zero duration.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**:  
+  Component-based framework for building scalable web applications.
+- **TypeScript**:  
+  Provides robust typing and clean syntax for application logic.
+- **SCSS**:  
+  Enables modular and reusable styles with a responsive layout.
+- **HTML5 Audio**:  
+  Alarm functionality using the `<audio>` element.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Screenshots
 
-## Running end-to-end tests
+**Timer Setup**  
+The main interface for setting hours, minutes, and seconds, with action buttons for interaction.  
+![MinuteHand](../MinuteHand/src/assets/screen/MinuteHand.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Getting Started
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Prerequisites
+
+Ensure you have **Node.js** and **Angular CLI** installed. You can install Angular CLI globally using the following command:
+
+```bash
+npm install -g @angular/cli
+```
+
+### Installation and Local Development
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/KamilBarczyk/MinuteHand.git
+   ```
+
+2. **Navigate to the project folder:**
+   ```bash
+   cd MinuteHand
+   ```
+
+3. **Instal dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Run the project:**
+   ```bash
+   ng serve
+   ```
+   
+The app will be available at http://localhost:4200.
