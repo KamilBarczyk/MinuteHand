@@ -34,7 +34,7 @@
 
 **Timer Setup**  
 The main interface for setting hours, minutes, and seconds, with action buttons for interaction.  
-![MinuteHand](../MinuteHand/src/assets/screen/MinuteHand.png)
+![MinuteHand](./src/assets/screen/MinuteHand.png)
 
 ---
 
