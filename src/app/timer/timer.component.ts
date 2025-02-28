@@ -70,29 +70,30 @@ export class TimerComponent implements OnInit {
       clearInterval(this.timer);
       this.idAudio.nativeElement.play();
       this.animate = true;
+
       setTimeout(() => {
         this.stop();
         this.idAudio.nativeElement.load();
-      }, 5000);
+      }, 17000);
     }
   }
 
-  stop(){
-    this.disabled =false;
+  stop() {
+    this.disabled = false;
     this.show = true;
     this.animate = false;
     clearInterval(this.timer);
     this.idAudio.nativeElement.load();
   }
 
-  reset(){
+  reset() {
     this.hours = 0;
     this.minutes = 0;
     this.seconds = 0;
     this.stop();
   }
 
-  start(){
+  start() {
     if (this.hours > 0 || this.minutes > 0 || this.seconds > 0) {
       this.disabled = true;
       this.show = false;

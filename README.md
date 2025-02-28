@@ -12,6 +12,8 @@
   Start, stop, or reset the timer with responsive buttons.
 - **Alarm Notification**:  
   Triggers an alarm sound when the timer reaches zero.
+- **Smooth Animations**:  
+  Subtle visual feedback during countdown completion.
 - **Error Handling**:  
   Prevents setting invalid values or running timers with zero duration.
 
