@@ -16,6 +16,8 @@
   Subtle visual feedback during countdown completion.
 - **Error Handling**:  
   Prevents setting invalid values or running timers with zero duration.
+- **Responsive Design**:  
+  Fully optimized for various screen sizes.
 
 ---
 
